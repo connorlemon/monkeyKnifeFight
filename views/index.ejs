@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Monkey Knife Fight</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:800i&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="/stylesheets/main.css">
+    </head>
+    
+    <body onload="bodyOnLoad()">
+        <div class="container-fluid">
+        <div class="row header">
+            <div class="col-sm-6 logo">
+                <img id="mkflogo" src="/images/mkf-logo.png">
+            </div>
+            <div class="col-sm-6 moreless">
+                <img id="molimg" src="/images/more-or-less.png">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col cta">
+                <img id="ctaImg" src="/images/know-sports.png">
+            </div>
+        </div>
+        <form action="/mkf-submit.php" method="post" onsubmit="return validateFormValues()">
+        <div class="row game">
+            <div class="col-6 choice1 mahome">
+                <img id="playerImg" src="/images/mahome-bg.png">
+                <div class="choiceCard">
+                    <div><span class="score">309.5</span><span class="points">YARDS</span></div>
+                    <div class="btn-group btn-group-toggle btns" data-toggle="buttons" required>
+                        <label class="btn btn-primary btn-lg btn-left">
+                            <input name="player1" type="radio" value="more" id="more1"> MORE
+                        </label>
+                        <label class="btn btn-primary btn-lg btn-right">
+                            <input name="player1" type="radio" value="less" id="less1"> LESS
+                        </label>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-6 choice2 garoppolo">
+                <img id="playerImg" src="/images/garoppolo-bg.png">
+                <div class="choiceCard">
+                    <div><span class="score">237.5</span><span class="points">YARDS</span></div>
+                    <div class="btn-group btn-group-toggle btns" data-toggle="buttons" required>
+                        <label class="btn btn-primary btn-lg btn-left">
+                            <input name="player2" type="radio" value="more" id="more2"> MORE
+                        </label>
+                        <label class="btn btn-primary btn-lg btn-right">
+                            <input name="player2" type="radio" value="less" id="less2"> LESS
+                        </label>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="row signup">
+            <div class="col-sm-2 emailformheader">
+                <h3>EMAIL</h3>
+                <h3>CONFIRM</h3>
+            </div>
+            <div class="col-sm-6 emailformfields">
+                <input type="email" class="emailInput" id="email1" placeholder="example@host.com" name="email1" required size="10">
+                <input type="email" class="emailInput" id="email2" placeholder="Please confirm your email" name="email2" required size="10">
+                <span id="errorMessage" class="error"></span> 
+            </div>
+            <div class="col-sm-4 submit">
+                <button id="sbmtBtn" onClick='printFormValues(this.form); return false;'>SUBMIT</button>
+            </div>             
+        </div>
+        </form>
+        <script type="text/javascript" src="/js/functionality.js"></script>
+    </body>
+</html>

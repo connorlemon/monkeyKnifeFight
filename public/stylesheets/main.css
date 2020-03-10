@@ -1,0 +1,201 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E5E4E4;
+    font-size: 25px;
+    width: 680px;
+    text-align: center;
+    margin: auto;
+    padding-top: 4px;
+}
+
+div {
+    margin: auto;
+    /* padding-bottom: 4px; */
+}
+
+.row.header {
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+
+#mkflogo {
+    float: left;
+    width: 90%;
+}
+
+#molimg {
+    float: right;
+    width: 60%;
+    margin-right: 20%;
+}
+
+.cta {
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#ctaImg {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+}
+
+.game {
+    margin: auto;
+    /* margin-top: 2px; */
+    margin-bottom: 8px;
+    background-color: #D9D8D8;
+    border-radius: 24px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+#playerImg {
+    width: 100%;
+    margin-top: 2px;
+}
+
+.choice1 {
+    padding-right: 4px;
+}
+
+.choice2 {
+    padding-left: 4px;
+}
+
+.choiceCard {
+    background-color: #302f2f;
+    padding-bottom: 0;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.points {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.btns {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-primary {
+    width: 80%;
+    border: 1px solid #302f2f;
+    background-color: #03c8ff;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #302f2f;
+    margin: auto;
+    padding: 20px 20px;
+    margin-bottom: 0;
+}
+
+.btn .btn-primary :hover {
+    background-color: #B8E2F0;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #B8E2F0;
+}
+
+.btn-left {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.btn-right {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.score {
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    font-style: italic;
+    color: #ff9503;
+    display: block;
+    margin-bottom: -20px;
+}
+
+.points {
+    font-style: italic;
+    letter-spacing: -.5px;
+    margin-top: -22px;
+}
+
+.emailInput {
+    width: 100%;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.emailformheader {
+    text-align: right;
+    margin: 0;
+    padding-top: 0;
+    text-shadow: 0.5px 0.5px 0.5px #302f2f;
+}
+
+h3 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+#sbmtBtn {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 800;
+    font-style: italic;
+    border-radius: 22px;
+    background-color: #ff9503;
+    color: black;
+    float: left;
+    padding: 30px 40px;
+    box-shadow: 1px 2px 2px #302f2f;
+    border: 0px !important;
+}
+
+.error {
+    width  : 100%;
+    margin-bottom: 2px;
+    padding: 0;
+    font-size: 16px;
+    color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+
+  .modal-dialog {
+      max-width:750px;
+  }
+
+  .modal-content {
+    background-color: #ff9503;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #302f2f
+  }
+
+  .modal-body {
+      padding: 5rem 1rem;
+  }
