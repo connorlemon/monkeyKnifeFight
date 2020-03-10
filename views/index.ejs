@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/stylesheets/main.css">
     </head>
     
-    <body onload="bodyOnLoad()">
+    <body>
         <div class="container-fluid">
         <div class="row header">
             <div class="col-sm-6 logo">
@@ -28,7 +28,7 @@
                 <img id="ctaImg" src="/images/know-sports.png">
             </div>
         </div>
-        <form action="/mkf-submit.php" method="post" onsubmit="return validateFormValues()">
+        <form action="">
         <div class="row game">
             <div class="col-6 choice1 mahome">
                 <img id="playerImg" src="/images/mahome-bg.png">
@@ -67,10 +67,10 @@
             <div class="col-sm-6 emailformfields">
                 <input type="email" class="emailInput" id="email1" placeholder="example@host.com" name="email1" required size="10">
                 <input type="email" class="emailInput" id="email2" placeholder="Please confirm your email" name="email2" required size="10">
-                <span id="errorMessage" class="error"></span> 
+                <span id="errorMessage">error message</span> 
             </div>
             <div class="col-sm-4 submit">
-                <button id="sbmtBtn" onClick='printFormValues(this.form); return false;'>SUBMIT</button>
+                <button id="sbmtBtn" type="submit">SUBMIT</button>
             </div>             
         </div>
         </form>
